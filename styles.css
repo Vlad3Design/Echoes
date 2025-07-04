@@ -1,0 +1,129 @@
+/* Echoes Plugin Styles */
+
+.echoes-ribbon-class {
+	color: var(--text-accent);
+}
+
+.echoes-ribbon-class:hover {
+	color: var(--text-accent-hover);
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+	.echoes-tabs {
+		flex-wrap: wrap;
+	}
+	
+	.echoes-tab {
+		flex: 1;
+		min-width: 80px;
+		text-align: center;
+	}
+	
+	.echoes-stats {
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	}
+	
+	.echoes-actions {
+		flex-direction: column;
+	}
+	
+	.echoes-action-btn {
+		width: 100%;
+	}
+}
+
+/* Word cloud specific styles */
+.echoes-wordcloud-container svg {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Bar chart animations */
+.echoes-bar-fill {
+	animation: fillBar 0.8s ease-in-out;
+}
+
+@keyframes fillBar {
+	from {
+		width: 0%;
+	}
+	to {
+		width: var(--final-width);
+	}
+}
+
+/* Tag hover effects */
+.echoes-tag {
+	transition: all 0.2s ease;
+}
+
+.echoes-tag:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading states */
+.echoes-loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	color: var(--text-muted);
+	font-style: italic;
+}
+
+.echoes-loading::before {
+	content: "⏳";
+	margin-right: 8px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Enhanced table styles */
+.echoes-words-table tr:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+.echoes-words-table td:first-child {
+	font-weight: 600;
+	color: var(--text-muted);
+}
+
+/* Improved button styles */
+.echoes-refresh-btn:hover,
+.echoes-action-btn:hover {
+	opacity: 0.9;
+	transform: translateY(-1px);
+}
+
+/* Better spacing for sections */
+.echoes-section:last-child {
+	margin-bottom: 0;
+}
+
+/* Print styles */
+@media print {
+	.echoes-tabs,
+	.echoes-refresh-btn,
+	.echoes-actions {
+		display: none;
+	}
+	
+	.echoes-view {
+		padding: 0;
+	}
+	
+	.echoes-wordcloud-container {
+		background: white;
+		border: 1px solid #ccc;
+	}
+} 
