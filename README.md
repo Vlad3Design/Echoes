@@ -1,3 +1,5 @@
+![Echoes](Echoes.jpg)
+
 # Echoes - Concept Frequency Analyzer
 
 [![Obsidian Plugin](https://img.shields.io/badge/Obsidian-Plugin-purple)](https://obsidian.md/)
@@ -40,6 +42,11 @@ See the hidden patterns in your notes! Echoes scans your entire vault to reveal 
 - Export analysis results as JSON
 - Save frequency data for external analysis
 - Timestamped analysis snapshots
+
+![Echoes](1_echoes.jpg)
+![Echoes](2_echoes.jpg)
+![Echoes](3_echoes.jpg)
+![Echoes](4_echoes.jpg)
 
 ## 🚀 Installation
 
