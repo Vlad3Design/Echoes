@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-See the hidden patterns in your notes! Echoes scans your entire vault to reveal dominant concepts through word clouds and comprehensive statistics, instantly showing you what matters most in your knowledge collection.
+See the hidden patterns in your notes! Echoes scans your entire Obsidian vault to reveal dominant concepts through word clouds and comprehensive statistics, instantly showing you what matters most in your knowledge collection.
 
 ## ✨ Features
 
