@@ -47,7 +47,7 @@ export default class EchoesPlugin extends Plugin {
 		// Add command
 		this.addCommand({
 			id: 'open-echoes-view',
-			name: 'Open Echoes Analyzer',
+			name: 'Open Concept Analyzer',
 			callback: () => {
 				this.activateView();
 			}
@@ -80,7 +80,7 @@ export default class EchoesPlugin extends Plugin {
 	}
 
 	onunload() {
-		this.app.workspace.detachLeavesOfType(VIEW_TYPE_ECHOES);
+		// Plugin cleanup - view cleanup is handled automatically by Obsidian
 	}
 
 	async loadSettings() {
@@ -132,7 +132,7 @@ export default class EchoesPlugin extends Plugin {
 		}
 	}
 
-	private refreshTimeout: NodeJS.Timeout | null = null;
+	private refreshTimeout: number | null = null;
 
 	private refreshAnalysis() {
 		if (this.refreshTimeout) {

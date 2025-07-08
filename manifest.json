@@ -1,7 +1,7 @@
 {
 	"id": "echoes",
 	"name": "Echoes",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"minAppVersion": "0.15.0",
 	"description": "See the hidden patterns in your notes! Echoes scans your entire vault to reveal dominant concepts through word clouds and comprehensive statistics, instantly showing you what matters most in your knowledge collection.",
 	"author": "Vlad 3Design",

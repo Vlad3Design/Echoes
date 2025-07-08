@@ -889,7 +889,7 @@ var EchoesPlugin = class extends import_obsidian2.Plugin {
     ribbonIconEl.addClass("echoes-ribbon-class");
     this.addCommand({
       id: "open-echoes-view",
-      name: "Open Echoes Analyzer",
+      name: "Open Concept Analyzer",
       callback: () => {
         this.activateView();
       }
@@ -914,7 +914,6 @@ var EchoesPlugin = class extends import_obsidian2.Plugin {
     );
   }
   onunload() {
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE_ECHOES);
   }
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
